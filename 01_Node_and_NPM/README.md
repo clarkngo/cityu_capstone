@@ -1,6 +1,6 @@
 # Node and NPM
 
-![Logo](/01_Node_and_NPN/images/01_logo.png "Logo")
+![Logo](/01_Node_and_NPM/images/01_logo.png "Logo")
 
 ## Learning Outcomes
 
@@ -35,7 +35,7 @@
 
 # Architecture
 
-![Node.js Architecture](/01_Node_and_NPN/images/00_nodejs_architecture.png "Node.js Architecture")
+![Node.js Architecture](/01_Node_and_NPM/images/00_nodejs_architecture.png "Node.js Architecture")
 
 Source: https://stackoverflow.com/questions/36766696/which-is-correct-node-js-architecture
 
@@ -43,21 +43,21 @@ The node.js project began in 2009 as a JavaScript environment decoupled from the
 
 Source: https://nikhilm.github.io/uvbook/introduction.html#background
 
-![Node.js System](/01_Node_and_NPN/images/00_nodejs_system.jpg "Node.js System")
+![Node.js System](/01_Node_and_NPM/images/00_nodejs_system.jpg "Node.js System")
 
 Source: https://twitter.com/rauschma/status/496213393146404864/photo/1
 
 # Simple Web Server
 
-![Node.js Create Server](/01_Node_and_NPN/images/00_nodejs_create_server.png "Node.js Create Server")
+![Node.js Create Server](/01_Node_and_NPM/images/00_nodejs_create_server.png "Node.js Create Server")
 
 Source: https://codeburst.io/all-about-http-in-node-js-and-3-best-ways-for-http-requests-in-web-development-6e5b6876c3a4
 
-![Client Server](/01_Node_and_NPN/images/00_client_server.png "Client Server")
+![Client Server](/01_Node_and_NPM/images/00_client_server.png "Client Server")
 
 Source: https://www.sitepoint.com/build-a-simple-web-server-with-node-js/
 
-![Request Response](/01_Node_and_NPN/images/00_request_response.png "Request Response")
+![Request Response](/01_Node_and_NPM/images/00_request_response.png "Request Response")
 
 Source: http://backenddev.diy.org/challenge/2
 
@@ -70,7 +70,7 @@ https://nodejs.org/en/
 
 Click the Long Term Support (LTS) version (the version number may be various) download button to download the Node.js package:
 
-![Download Node](/01_Node_and_NPN/images/02_download_node.png "Download Node")
+![Download Node](/01_Node_and_NPM/images/02_download_node.png "Download Node")
 
 Click and run the package after downloading.
 MacOS and Windows will have different installation process.
@@ -79,7 +79,7 @@ Please follow the instruction to install the Node.js
 After the installation process is done, restart your VS Code.
 And then push control + ~ key to open the terminal:
 
-![Open Terminal](/01_Node_and_NPN/images/03_open_terminal.png "Open Terminal")
+![Open Terminal](/01_Node_and_NPM/images/03_open_terminal.png "Open Terminal")
 
 Note: please make sure you are still in the amazon-apprenti-2019/CS242/YOURNAME/Module1 folder
 
@@ -89,7 +89,7 @@ node -v
 npm –v
 ```
 
-![Node and NPM Version](/01_Node_and_NPN/images/04_node_npm_version.png "Node and NPM Version")
+![Node and NPM Version](/01_Node_and_NPM/images/04_node_npm_version.png "Node and NPM Version")
 
 # Configuring the package.json
 Navigate into the project folder in the terminal by using cd command. You can check whether you are in the correct folder by using pwd (MacOS and Linux) or cd (Windows) command.
@@ -101,33 +101,33 @@ Type the following command in the terminal to initialize a Node project:
 npm init –y
 ```
 
-![NPM init](/01_Node_and_NPN/images/05_npm_init.png "NPM init")
+![NPM init](/01_Node_and_NPM/images/05_npm_init.png "NPM init")
 
 This command created a package.json file with default content. You are supposed to see a `package.json` file under your Module1 (or project) folder.
 
-![package.json in directory](/01_Node_and_NPN/images/06_package_json_directory.png "package.json in directory")
+![package.json in directory](/01_Node_and_NPM/images/06_package_json_directory.png "package.json in directory")
 
 Note: this file is a JSON (JavaScript Object Notation) file that contains the project information and dependency information for your project. A JSON file is a file that contains key-value pairs. The basic syntax is { “key”: “value” }.
 
 # Creating your first server-side web application
 Create an app.js file under the Module1 folder:
 
-![app.js in directory](/01_Node_and_NPN/images/07_app_js_directory.png "app.js in directory")
+![app.js in directory](/01_Node_and_NPM/images/07_app_js_directory.png "app.js in directory")
 
 Type the following code into the `app.js` file:
 
-![Create a Simple Server](/01_Node_and_NPN/images/08_app_js_code.png "Create a Simple Server")
+![Create a Simple Server](/01_Node_and_NPM/images/08_app_js_code.png "Create a Simple Server")
 
 Open the terminal in the VS Code and type the following command to run the code:
 ```
 node app.js
 ```
 
-![Text in Browser](/01_Node_and_NPN/images/10_browser_text.png "Text in Browser")
+![Text in Browser](/01_Node_and_NPM/images/10_browser_text.png "Text in Browser")
 
 Click the http://localhost:3000 from the terminal or copy and paste it to your browser.
 
-![Console Log of Server Running](/01_Node_and_NPN/images/09_console_log.png "Console Log of Server Running")
+![Console Log of Server Running](/01_Node_and_NPM/images/09_console_log.png "Console Log of Server Running")
 
 
 Now your first web server is running. Please hit the control + c key to quit the server.
@@ -136,7 +136,7 @@ Now your first web server is running. Please hit the control + c key to quit the
 # Adding the routing functionality
 Let’s add routers to our server by updating the following code to the createServer section:
 
-![Routing Functionality](/01_Node_and_NPN/images/11_routing_functionality.png "Routing Functionality")
+![Routing Functionality](/01_Node_and_NPM/images/11_routing_functionality.png "Routing Functionality")
 
 Type the following command in the terminal to run the server:
 ```
@@ -145,15 +145,15 @@ node app.js
 
 Click the http://localhost:3000 from the terminal or copy and paste it to your browser.
 
-![Home Page](/01_Node_and_NPN/images/12_home_page.png "Home Page")
+![Home Page](/01_Node_and_NPM/images/12_home_page.png "Home Page")
 
 You are supposed to see the Home page text.
 
 
 Change the URL to http://localhost:3000/about to see the difference.
 
-![About Page](/01_Node_and_NPN/images/13_about_page.png "About Page")
+![About Page](/01_Node_and_NPM/images/13_about_page.png "About Page")
 
 Change the URL to http://localhost:3000/other to see the difference.
 
-![404 Page](/01_Node_and_NPN/images/14_404_page.png "404 Page")
+![404 Page](/01_Node_and_NPM/images/14_404_page.png "404 Page")
