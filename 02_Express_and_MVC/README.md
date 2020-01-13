@@ -41,12 +41,34 @@ An Express application can use the following types of middleware:
 
 You can load application-level and router-level middleware with an optional mount path. You can also load a series of middleware functions together, which creates a sub-stack of the middleware system at a mount point.
 
+# Preparation
+1)	Clone the repository if you have not done so:
+git clone <repository_url> amazon-apprenti-2019
+
+2)	Open the VS Code and open the amazon-apprenti-2019/CS242/YOURNAME directory
+
+Note: change YOURNAME to your real name. If you do not have the CS242 or YOURNAME folder, please create them under the amazon-apprenti-2019 folder.
+
+3)	Create a Module2 directory under YOURNAME directory.
+Note: If this directory exists, skip this step.
+
+Click the Add folder icon and type Module2 for the folder name
+
+
 # Steps
-1) Create an empty project folder.
+## Installing the Express Package and setting up the Environment for TypeScript
+
+1)	Open the terminal in the VS Code and navigate into the amazon-apprenti-2019/CS242/YOURNAME/Module2 folder in the terminal by using cd command:
+
+Here is just an example of how to get there. It will be various based on where you currently are in the file system.
+
+
+You can check whether you are in the correct folder by using pwd (MacOS and Linux) or cd (Windows) command:
+
+Your result will be different based on where you keep your project. But you should get a similar result.
 
 2)	Type the following command in the terminal to initialize a Node project:
 >>> npm init -y
-
 
 
 3)	Type the following command in the terminal to install the Express package and type definitions for Express:

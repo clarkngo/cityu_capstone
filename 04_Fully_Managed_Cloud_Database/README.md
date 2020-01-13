@@ -25,9 +25,28 @@ Source: https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2013/
 
 MongoDB Atlas is a fully-managed cloud database developed by the same people that build MongoDB. Atlas handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
 
+# Preparation
+
+1)	Open a terminal in your local machine and navigate to a place beside your amazon-apprenti-2019 folder
+Note: because the code we will clone is from another repository which has the git information. We have to clear it before putting them in your amazon-apprenti-2019 folder.
+
+2)	Run the following command to clone the template repository and clear the git information:
+>>> git clone https://github.com/PengWang0316/CS224_Module4_HP.git Module4
+>>> cd Module4
+>>> rm -fR .git
+
+3)	Copy and paste the Module4 folder to the amazon-apprenti-2019/CS242/YOURNAME directory
+
+4)	Open the VS Code and open the amazon-apprenti-2019/CS242/YOURNAME directory
+
+Note: change YOURNAME to your real name. If you do not have the CS242 or YOURNAME folder, please create them under the amazon-apprenti-2019 folder.
+
+5)	Open a terminal in the VS Code, navigate to the amazon-apprenti-2019/CS242/YOUNAME/Module4 folder and type the following command:
+>>> npm i
+
 # Steps
 
-Set up a managed MongoDB server with MongoDB Atlas
+## Set up a managed MongoDB server with MongoDB Atlas
 We have already installed the MongoDB server in the EC2 instance in the last module. However, we have to take care of the database all by ourselves such as security, backup, replica, scaling, and so forth. Using a managed service may help a lot. Here we will take a look at how to set up a managed MongoDB server with MongoDB Atlas. You can use it for free with small database instances, which is good for some small projects.
 
 1)	Visit the MongoDB Atlas official website by clicking the following link:
@@ -68,7 +87,7 @@ Fill out the username, password, choose Read and write to any database and click
 Note: If you want to use the copy and paste, please keep this information somewhere. We will use it in the next section.
 
  
-Install and set up Mongoose
+## Install and set up Mongoose
 
 1)	Open a terminal in the VS Code and navigate to the amazon-apprenti-2019/CS242/YOUNAME/Module4 folder. Type the following command:
 >>> npm i --save mongoose
