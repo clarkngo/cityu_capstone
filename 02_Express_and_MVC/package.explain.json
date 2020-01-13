@@ -4,18 +4,22 @@
   "description": "![Logo](/02_Express_and_MVC/images/01_logo.png \"Logo\")",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo This is a test",
+    // copy contents of src/views folder to public folder
+    "copyViews": "cp -R src/views public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  // npm i --save express @types/express
   "dependencies": {
+    // npm i --save express @types/express
     "@types/express": "^4.17.2",
+    // npm i --save ejs
+    "ejs": "^3.0.1",
     "express": "^4.17.1"
   },
-  // npm i --save-dev typescript
   "devDependencies": {
+    // npm i --save-dev typescript
     "typescript": "^3.7.4"
   }
 }
