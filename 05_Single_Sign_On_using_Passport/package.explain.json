@@ -1,0 +1,33 @@
+{
+  "name": "clark-module5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc && cpx ./src/.env ./public && cpx ./src/views/**/* public/views && cpx ./src/imgs/**/* public/imgs",
+    "copyViews": "cp -R src/views public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    // npm i --save passport passport-facebook
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^4.17.1",
+    "@types/mongoose": "^5.5.13",
+    // npm i --save-dev @types/passport-facebook @types/passport
+    "@types/passport": "^1.0.2",
+    "@types/passport-facebook": "^2.1.9",
+    "cpx": "^1.5.0",
+    "typescript": "^3.5.3"
+  }
+}
