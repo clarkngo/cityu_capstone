@@ -42,7 +42,7 @@ An Express application can use the following types of middleware:
 You can load application-level and router-level middleware with an optional mount path. You can also load a series of middleware functions together, which creates a sub-stack of the middleware system at a mount point.
 
 # Steps
-1)
+1) Create an empty project folder.
 
 2)	Type the following command in the terminal to initialize a Node project:
 >>> npm init -y
