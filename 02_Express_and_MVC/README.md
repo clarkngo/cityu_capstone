@@ -1,4 +1,4 @@
-# Node and NPM
+# Express and Model-View-Controller
 
 ![Logo](/02_Express_and_MVC/images/01_logo.png "Logo")
 
