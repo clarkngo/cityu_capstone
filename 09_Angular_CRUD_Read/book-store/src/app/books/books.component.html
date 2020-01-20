@@ -1,0 +1,10 @@
+<main class="main">
+  <div *ngFor="let book of books" class="bookList" (click)="openDialog(book._id)">
+    <img alt="{{book.title}}" src="{{book.picture}}" class="bookImage"/>
+    <div class="bookTitleDiv">
+      <div class="bookTitle">{{book.title}}</div>
+      <div class="bookSubtitle"><span>{{book.author}}</span><span>{{book.isbn}}</span><span>{{book.price}}</span></div>
+    </div>
+    <mat-divider class="bookDivider"></mat-divider>
+  </div>
+</main>
