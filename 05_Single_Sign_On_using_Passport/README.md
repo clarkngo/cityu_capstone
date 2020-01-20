@@ -8,16 +8,13 @@
 
 # Architecture
 
-![MongoDB Architecture](/05_Single_Sign_On_using_Passport/images/UPDATE_THIS.png "MongoDB Architecture")
 
 ## Learning Outcomes
 -	Install Passport package
 -	Integrate Passport with Node.js
 -	Set up Passport with Facebook strategy
 
-# [Introduction to MongoDB Atlas](https://docs.atlas.mongodb.com/)
-
-MongoDB Atlas is a fully-managed cloud database developed by the same people that build MongoDB. Atlas handles all the complexity of deploying, managing, and healing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
+# About Passport
 
 # Preparation
 

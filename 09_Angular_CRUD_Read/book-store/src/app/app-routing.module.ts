@@ -10,6 +10,10 @@ const routes: Routes = [
     component: BooksComponent,
   },
   {
+    path: 'admin/bookform',
+    component: BookFormComponent,
+  },
+  {
     path: 'admin/bookform/:id',
     component: BookFormComponent,
   },

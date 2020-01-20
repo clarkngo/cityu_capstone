@@ -8,9 +8,6 @@
 # Architecture
 
 ## Learning Outcomes
--	Install Passport package
--	Integrate Passport with Node.js
--	Set up Passport with Facebook strategy
 
 # Client-Side
 

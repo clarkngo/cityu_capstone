@@ -1,6 +1,6 @@
 # Angular CRUD - Create
 
-![Logo](/07_Angular_Client_Side_Web_Frameworks/images/01_logo.png "Logo")
+![Logo](/08_Angular_CRUD_Create/images/01_logo.png "Logo")
 
 # System Architecture
 

@@ -24,5 +24,5 @@ export const addBook = (title: string, isbn: string, author: string, picture: st
   new Book({ title, isbn, author, picture, price}).save();
 };
 
-// Find a user based on the username
+// Find all books
 export const fetchBooks = async () => await Book.find({});
