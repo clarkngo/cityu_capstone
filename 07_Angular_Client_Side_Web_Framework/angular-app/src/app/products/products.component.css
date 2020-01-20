@@ -1,0 +1,7 @@
+.productTable {
+  text-align: left;
+}
+
+.productTable td, .productTable th {
+  padding: 5px 10px;
+}

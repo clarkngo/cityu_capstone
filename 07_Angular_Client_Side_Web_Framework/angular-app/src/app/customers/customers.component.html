@@ -1,0 +1,18 @@
+<p>Customer List</p>
+<table class="customerTable">
+  <thead>
+    <th scope="col">Name</th>
+    <th scope="col">Email</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of customers">
+      <td>{{ customer.username }}</td>
+      <td>
+        <span *ngIf="!customer.isHiddenEmail; else hide">{{ customer.email }}</span>
+        <ng-template #hide>
+          <span>**@***.***</span>
+        </ng-template>
+      </td>
+    </tr>
+  </tbody>
+</table>
