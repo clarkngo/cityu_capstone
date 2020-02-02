@@ -1,5 +1,9 @@
 # Book Store - MEAN Stack
 
+This application is deployed in AWS
+
+http://bookstore-clark-ngo.s3-website-us-west-2.amazonaws.com/
+
 ## Front-end
 - HTML5
 - CSS
