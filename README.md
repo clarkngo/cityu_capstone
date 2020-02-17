@@ -76,6 +76,6 @@ The book store application only showcased a single class called Book. The class 
 
 ![](/images/log_book.png)
 
-The model Book’s structure in JSON format.
+### The model Book’s structure in JSON format.
 
 ![](/images/log_book_json.png)
