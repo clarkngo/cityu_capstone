@@ -1,11 +1,6 @@
 # MEAN Stack
 
-Full-stack JavaScript open-source solution. MEAN Stack consist of MongoDB, Express, Angular, and Node.js.
-
-## Video Demo
-
-TO BE UPDATED
-
+Full-stack JavaScript open-source solution. MEAN Stack consist of MongoDB, Express, Angular, and Node.js. The idea is to solve the common issues with connecting those frameworks, build a robust framework to support daily development needs, and help developers use better practices while working with popular JavaScript components.
 
 ## Physical View using Deployment Diagram
 
@@ -84,13 +79,3 @@ The book store application only showcased a single class called Book. The class 
 The model Book’s structure in JSON format.
 
 ![](/images/log_book_json.png)
-
-How well did you understand the section?
-
-RATING: __ (1) How well did you understand Full Stack?
-RATING: __ (2) Ease of understanding the information?
-RATING: __ (3) Quality of language?
-RATING: __ (4) Layout impression?
-RATING: __ (5) How much did the visual representation helped with your understanding?
-RATING: __ (6) How much did the text-based description helped your understanding?
-RATING: __ (7) Overall rating of the documentation?
