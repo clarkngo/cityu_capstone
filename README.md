@@ -58,7 +58,7 @@ When an http request is made, the front-end will be triggered an Angular will pi
 
 ![](/images/sce_book_store.png)
 
-### The scenario described is a user accessing a book store application. When the user enters the URL, JavaScript will be run and will hit the router of the front-end server, which is AppRoutingModule. AppRoutingModule will call the BooksComponent, which will load fetchBooks as its dependency injection. fetchBooks will then create an HTTP request to the back-end server that has a router, controller, and model to process the request and request to the database server. Database server processes the request and with the back-end server waiting, will grab the data and sent it back to the front-end server as a JSON response. The front-end will now have the data and the template view to show to the user.
+The scenario described is a user accessing a book store application. When the user enters the URL, JavaScript will be run and will hit the router of the front-end server, which is AppRoutingModule. AppRoutingModule will call the BooksComponent, which will load fetchBooks as its dependency injection. fetchBooks will then create an HTTP request to the back-end server that has a router, controller, and model to process the request and request to the database server. Database server processes the request and with the back-end server waiting, will grab the data and sent it back to the front-end server as a JSON response. The front-end will now have the data and the template view to show to the user.
 
 ## Development View using Package Diagram
 
@@ -76,6 +76,6 @@ The book store application only showcased a single class called Book. The class 
 
 ![](/images/log_book.png)
 
-### The model Book’s structure in JSON format.
+The model Book’s structure in JSON format.
 
 ![](/images/log_book_json.png)
