@@ -1,6 +1,22 @@
 # MEAN Stack
 
-Full-stack JavaScript open-source solution. MEAN Stack consist of MongoDB, Express, Angular, and Node.js. The idea is to solve the common issues with connecting those frameworks, build a robust framework to support daily development needs, and help developers use better practices while working with popular JavaScript components.
+![](/images/logo.jpg)
+
+MEAN Stack is a full-stack JavaScript open-source solution. MEAN Stack consist of MongoDB, Express, Angular, and Node.js. The idea is to solve the common issues with connecting those frameworks, build a robust framework to support daily development needs, and help developers use better practices while working with popular JavaScript components.
+
+## Back-end with Node.js
+Node.js is built for handling asynchronous I/O while JavaScript is has a event loop built-in for the client-side that makes Node.js fast in performance compared to other environments. However, the event-driven/callback approach makes Node.js difficult to debug and learn as well.
+
+Node.js includes modules such as mongoose, which is a MongoDB object modeling, and express web application framework. Through node modules, abstraction can be achieved, which reduces the overall complexity of the MEAN stack.
+
+## Back-end with Express Framework
+Express is a minimalist and unopinionated application framework for Node.js. It is a layer on top of Node.js that is feature-rich for web and mobile development without hiding any Node.js functionalities.
+
+## Front-end with Angular
+Angular is a web development platform built in TypeScript that provides developers with robust tools for creating the client side of web applications. It allows development of single-page web applications where content changes dynamically based on user behavior and preferences. It features dependency injections to ensure whenever a component is changed, other components related to it will be changed automatically.
+
+## Database with MongoDB
+MongoDB is a NoSQL database which stores data in BJSON (Binary JavaScript Object Notation). MongoDB became the de facto standard database for Node.js applications to fulfill the JavaScript everywhere using JSON (JavaScript Object Notation) to transmit data across different tiers (front-end, back-end, and database).
 
 ## Physical View using Deployment Diagram
 Who uses or what it shows:
@@ -27,6 +43,7 @@ The last step to production deployment is uploading our front-end code to Amazon
 ![](/images/phy_cloud_uml.png)
 
 Here's another diagram to show our production deployment without using UML notation.
+
 ![](/images/phy_cloud.png)
 
 ## Restaurant Analogy
