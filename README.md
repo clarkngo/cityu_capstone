@@ -38,7 +38,7 @@ Moving further to actual production, the first step to migrate to the cloud is o
 
 ![](/images/phy_local_cloud_uml.png)
 
-The last step to production deployment is uploading our front-end code to Amazon S3 with AWS, uploading the back-end in an EC2 Instance with AWS. They would all communicate to each other with HTTP endpoints.
+The last step to production deployment is uploading our front-end code to Amazon S3 with AWS, uploading the back-end in an EC2 Instance with AWS. They would all communicate to each other with HTTP / HTTPS endpoints.
 
 ![](/images/phy_cloud_uml.png)
 
@@ -63,7 +63,7 @@ Who uses or what it shows:
 - Performance
 - Scalability
 
-In the process view, the front-end server, back-end server, are shown separately and together with the database server. In the first example, Angular application was deployed with hard-coded JSON in a service.ts file (located in the Service Factory).
+In the process view, the front-end server and back-end server are first shown separately then connect them together with the database server. In the first example, Angular application was deployed with hard-coded JSON in a service.ts file (located in the Service Factory).
 
 ![](/images/pro_frontend.png)
 
@@ -92,7 +92,7 @@ Who uses or what it shows:
 
 ![](/images/sce_book_store.png)
 
-The scenario described is a user accessing a book store application. When the user enters the URL, JavaScript will be run and will hit the router of the front-end server, which is AppRoutingModule. AppRoutingModule will call the BooksComponent, which will load fetchBooks as its dependency injection. fetchBooks will then create an HTTP request to the back-end server that has a router, controller, and model to process the request and request to the database server. Database server processes the request and with the back-end server waiting, will grab the data and sent it back to the front-end server as a JSON response. The front-end will now have the data and the template view to show to the user.
+The scenario described is a user accessing a book store application. When the user enters the URL, JavaScript will be run and will hit the router of the front-end server, which is AppRoutingModule. AppRoutingModule will call the BooksComponent, which will load fetchBooks as its dependency injection. fetchBooks will then create an HTTP request to the back-end server that has a router, controller, and model to process the request and query the database server. Database server  processes the query and with the back-end server waiting, will grab the data and sent it back to the front-end server as a JSON response. The front-end will now have the data and the template view to show to the user.
 
 ## Development View using Package Diagram
 Who uses or what it shows:
