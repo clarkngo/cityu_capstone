@@ -1,6 +1,6 @@
 # MEAN Stack
 
-![](/images/logo.jpg)
+![](/images/logo.png)
 
 MEAN Stack is a full-stack JavaScript open-source solution. MEAN Stack consist of MongoDB, Express, Angular, and Node.js. The idea is to solve the common issues with connecting those frameworks, build a robust framework to support daily development needs, and help developers use better practices while working with popular JavaScript components.
 
