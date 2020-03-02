@@ -107,7 +107,7 @@ The package view of the Node.js application shows that all CRUD operations (cont
 
 ![](/images/dev_nodejs.png)
 
-## Logic View
+## Logical View using Class Diagram
 Who uses or what it shows:
 - End-user
 - Functionality
