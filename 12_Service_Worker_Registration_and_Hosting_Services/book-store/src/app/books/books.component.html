@@ -1,0 +1,16 @@
+<main class="main">
+    <h2>BOOKS</h2>
+    <div *ngFor="let book of books" class="bookList" (click)="openDialog(book._id)">
+        <img alt="{{book.title}}" src="{{book.picture}}" class="bookImage" />
+        <div class="bookTitleDiv">
+            <div class="bookTitle">{{book.title}}</div>
+            <div class="bookSubtitle"><span>{{book.author}}</span><span>{{book.isbn}}</span><span>${{book.price}}</span>
+            </div>
+            <div>
+                <button mat-button color="primary" [routerLink]="['/admin/bookform/', book._id]">Edit</button>
+                <button mat-button color="warn" (click)="delete(book._id)">Delete</button>
+            </div>
+        </div>
+        <mat-divider class="bookDivider"></mat-divider>
+    </div>
+</main>

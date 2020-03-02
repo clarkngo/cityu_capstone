@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+    <span [routerLink]="['/']" class="clickable">Book Store</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+
+    <span>
+    <button mat-button [matMenuTriggerFor]="manageMenu">Manage Products</button>
+    <mat-menu #manageMenu="matMenu" xPosition="before">
+      <button mat-menu-item [routerLink]="['/admin/bookform']">Add Book</button>
+    </mat-menu>
+  </span>
+    <span></span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

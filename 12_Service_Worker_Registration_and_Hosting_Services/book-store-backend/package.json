@@ -1,0 +1,31 @@
+{
+    "name": "module8",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && cp ./src/.env ./public",
+        "copyViews": "cp -R src/views public"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "ejs": "^2.7.4",
+        "express": "^4.17.1",
+        "helmet": "^3.21.3",
+        "mongoose": "^5.9.3"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.6",
+        "@types/dotenv": "^6.1.1",
+        "@types/express": "^4.17.2",
+        "@types/helmet": "0.0.45",
+        "@types/mongoose": "^5.7.3",
+        "cpx": "^1.5.0",
+        "typescript": "^3.8.3"
+    }
+}
