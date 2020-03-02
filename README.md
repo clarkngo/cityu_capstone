@@ -24,6 +24,7 @@ Who uses or what it shows:
 - Topology
 - Communications
 
+### Video Demo
 [![MEAN Stack Physical View using Deployment Diagram](http://img.youtube.com/vi/hPNziXpjf7E/0.jpg)](https://www.youtube.com/watch?v=hPNziXpjf7E "MEAN Stack Physical View using Deployment Diagram")
 
 
