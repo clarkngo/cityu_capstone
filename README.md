@@ -24,6 +24,9 @@ Who uses or what it shows:
 - Topology
 - Communications
 
+[![MEAN Stack Physical View using Deployment Diagram](http://img.youtube.com/vi/hPNziXpjf7E/0.jpg)](https://www.youtube.com/watch?v=hPNziXpjf7E "MEAN Stack Physical View using Deployment Diagram")
+
+
 The deployment diagram shows 3 servers: front-end, back-end, and database. In the front-end, we require the browser as angular applications are browser-based web applications. The back-end server hosts our Node.js with Express on top of Node.js. In Express, we have the application and mongoose on top of it. Express will handle the communication on both front-end and database. The database server only includes a MongoDB. JSON is utilized to communicate across servers.
 
 ![](/images/phy_overview.png)
