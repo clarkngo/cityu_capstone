@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <span [routerLink]="['/']" class="clickable">Book Store</span>
+    &nbsp;
+    <!-- Cache the wifi_off_white.png so that it can be used when offline -->
+    <img src="../assets/icons/wifi_off_white.png" style="display:none">
+    <img *ngIf="!isOnline" src="../assets/icons/wifi_off_white.png" class="blink_img" matTooltip="You are working offline">
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+
+    <span>
+    <button mat-button [matMenuTriggerFor]="manageMenu">Manage Products</button>
+    <mat-menu #manageMenu="matMenu" xPosition="before">
+      <button mat-menu-item [routerLink]="['/admin/bookform']">Add Book</button>
+    </mat-menu>
+  </span>
+    <span></span>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

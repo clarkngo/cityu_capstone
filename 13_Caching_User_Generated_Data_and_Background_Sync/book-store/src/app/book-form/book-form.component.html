@@ -1,0 +1,24 @@
+<main class="book-form-container">
+    <h2 *ngIf="bookId; else hide">Update the book informaiton</h2>
+    <ng-template #hide>
+        <h2>Add a new book</h2>
+    </ng-template>
+    <div class="form-container">
+        <mat-form-field>
+            <input matInput placeholder="Book title" type="text" [(ngModel)]="title" required />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="ISBN" type="text" [(ngModel)]="isbn" required />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Author" type="text" [(ngModel)]="author" required />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Picture" type="text" [(ngModel)]="picture" required />
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Price" type="number" [(ngModel)]="price" required />
+        </mat-form-field>
+        <button mat-raised-button (click)="handleSave()">Save</button>
+    </div>
+</main>

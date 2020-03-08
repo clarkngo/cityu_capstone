@@ -1,0 +1,4 @@
+DB_URI=mongodb+srv://<username>:<password>@cluster0-8snqs.mongodb.net/pwa?retryWrites=true&w=majority
+FRONTEND_ORIGIN='http://localhost:4200'
+BACKEND_PORT=8080
+BACKEND_IP=localhost
