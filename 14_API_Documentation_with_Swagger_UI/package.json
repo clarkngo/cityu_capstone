@@ -13,7 +13,7 @@
     "express": "^4.12.3",
     "jade": "~1.11.0",
     "lodash": "^4.15.0",
-    "mongoose": "~4.7.0",
+    "mongoose": "~5.7.5",
     "swagger-express-mw": "^0.7.0",
     "swagger-tools": "^0.10.1"
   },
