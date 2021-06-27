@@ -124,6 +124,14 @@ Who uses or what it shows:
 - End-user
 - Functionality
 
+## API Documentation with Swagger UI
+
+Documentation is not limited to system architecture, adding a documentation for API endpoints and parameters allows developers to quickly comprehend the resources available in a service. The OpenAPI specification the standard for documenting RESTful web services. Swagger UI is an open-source software that follows the specification and provides visualization of the backend API endpoints. 
+
+![](/images/swagger_ui.png)
+
+![](/images/swagger_ui_post.png)
+
 ### Video Demo
 [![MEAN Stack Logical View using Class Diagram](http://img.youtube.com/vi/BKDw3YMxPC4/0.jpg)](https://www.youtube.com/watch?v=BKDw3YMxPC4 "MEAN Stack Logical View using Class Diagram")
 

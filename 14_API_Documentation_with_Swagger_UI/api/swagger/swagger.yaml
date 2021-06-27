@@ -1,0 +1,190 @@
+# Created by irfan.maulana on 08/16/2016.
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Product API Documentation
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths 
+basePath: /
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+
+  /api/products:
+    x-swagger-router-controller: products
+
+    get:
+      description: Returns list of all Products
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ProductsResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/GeneralErrorResponse" 
+
+    post:
+      description: Insert new data Product
+      parameters:
+        - name: product
+          description: Product will be inserted
+          in: body
+          required: true
+          schema: 
+            $ref: "#/definitions/ProductNoId"
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ProductResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/GeneralErrorResponse"
+  /api/products/{id}:
+    x-swagger-router-controller: products
+
+    get:
+      description: Returns product by id
+      parameters:
+        - name: id
+          description: id of product will be select
+          type: number
+          in: path
+          required: true
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ProductResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/GeneralErrorResponse"
+
+    put:
+      description: Update data product by id
+      parameters:
+        - name: id
+          description: id of product will be updated
+          type: number
+          in: path
+          required: true
+        - name: product
+          description: Product information will be updated
+          in: body
+          required: true
+          schema: 
+            $ref: "#/definitions/ProductNoId"
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ProductResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/GeneralErrorResponse"
+
+    delete:
+      description: Delete data product by id
+      parameters:
+        - name: id
+          description: id of product will be deleted
+          type: number
+          in: path
+          required: true
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ProductResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/GeneralErrorResponse"
+
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+
+  Product:
+    properties:
+      _id:
+        type: string
+      title:
+        type: string
+      description:
+        type: string
+      price:
+        type: number
+      modified:
+        type: string
+        
+  ProductNoId:
+    properties:
+      title:
+        type: string
+      description:
+        type: string
+      price:
+        type: number
+        
+  ProductsResponse:
+    required:
+      - result
+      - products
+    properties:
+      result:
+        type: boolean
+        default: true
+      products:
+        type: array
+        items:
+          $ref: "#/definitions/Product"
+          
+  ProductResponse:
+    required:
+      - result
+      - product
+    properties:
+      result:
+        type: boolean
+        default: true
+      product:
+        $ref: "#/definitions/Product"
+          
+  GeneralErrorResponse:
+    required:
+      - result
+      - errorDesc
+    properties:
+      result:
+        type: boolean
+        default: false
+      errorDesc:
+        type: string
+        
