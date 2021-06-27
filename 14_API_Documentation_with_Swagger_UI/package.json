@@ -1,0 +1,28 @@
+{
+  "name": "sample-swagger-node",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Sample Using Swagger in NodeJS",
+  "keywords": [],
+  "author": "irfan.maulana",
+  "license": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "cookie-parser": "~1.4.3",
+    "express": "^4.12.3",
+    "jade": "~1.11.0",
+    "lodash": "^4.15.0",
+    "mongoose": "~4.7.0",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-tools": "^0.10.1"
+  },
+  "devDependencies": {
+    "should": "^11.1.1",
+    "supertest": "^2.0.1"
+  },
+  "scripts": {
+    "start": "swagger project start",
+    "test": "swagger project test"
+  }
+}
